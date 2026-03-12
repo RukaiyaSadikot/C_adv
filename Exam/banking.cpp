@@ -9,11 +9,6 @@ class Bank
         float balance;
         char holdername[50];
     public:
-        // Bank(int acno,const char holder[], float bal){
-        //     accnumber = acno;
-        //     strcpy(holdername, holder);
-        //     balance = bal;
-        // }
         
         Bank(){
             cout << "Enter account number :";
@@ -23,7 +18,6 @@ class Bank
             cin.getline(holdername, 50);
             cout << "Enter account balance :";
             cin >> balance;
-            // cin.ignore(); 
                }
         void credit(float amount){
             balance += amount;
@@ -88,43 +82,3 @@ int main(){
 }
 
 
-// #include <iostream>
-// using namespace std;
-
-// class BankAccount {
-// private:
-//     int accountNumber;
-//     double balance;
-//     string ownerName;
-
-// public:
-//     BankAccount(int accNo, string owner, double bal) {
-//         accountNumber = accNo;
-//         ownerName = owner;
-//         balance = bal;
-//     }
-
-//     void credit(double amount) {
-//         balance += amount;
-//     }
-
-//     void debit(double amount) {
-//         if(amount <= balance) balance -= amount;
-//         else cout << "Insufficient balance!" << endl;
-//     }
-
-    // void displayBalance() {
-    //     cout << "Account: " << accountNumber 
-    //          << ", Owner: " << ownerName 
-    //          << ", Balance: " << balance << endl;
-    // }
-// };
-
-// int main() {
-//     BankAccount acc1(101, "Rukaiya", 5000);
-//     acc1.displayBalance();
-//     acc1.credit(2000);
-//     acc1.debit(1000);
-//     acc1.displayBalance();
-//     return 0;
-// }
